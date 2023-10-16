@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Antes del script...</p>
+
+  <p>
+    <script>
+      // Realizamos un HOLA MUNDO dentro de un script y lo mostramos por pantalla en el navegador
+      document.write('¡Hola, mundo!');
+    </script>
+  </p>
+
+  <p>
+    <script>
+      // Preguntamos el nombre al usuario y lo mostramos por pantalla
+      nombre = prompt("¿Cuál es tu nombre?", "");
+      document.write("Te llamas ", nombre);
+    </script>
+  </p>
+
+  <p>
+    <script>
+      // Asignamos un número a dos variables y posteriormente realizamos su suma mostrándola por pantalla
+      var edad = 4
+      var edad2 = 5
+      var suma = edad + edad2
+      document.write("La suma de los dos números es ", suma)
+      console.log(suma)
+    </script>
+  </p>
+
+  <p>
+    <script>
+      // Realizamos la suma de dos números en una sola variable preguntándolos al usuario
+      var suma = parseInt(prompt("Introduce un número: "));
+      suma = suma + parseInt(prompt("Introduce un número: "));
+      document.write(suma)
+    </script>
+  </p>
+
+  Bienvenido
+  <h1>
+    <script>
+      // Sacamos por pantalla un texto en H1
+      document.write(" Miguel")
+    </script>
+  </h1>
+
+  <p>
+    <script>
+      // Preguntar una frase al usuario y que la devuelva por pantalla sólo con las vocales que contenga
+      frase = prompt("Introduce una frase: ");
+      for (var i = 0; i < frase.length; i++){
+        if(frase[i] == a || frase[i] == e || frase[i] == i || frase[i] == o || frase[i] == u){
+          document.write(frase[i])
+          }
+      }
+    </script>
+  </p>
+  
+  <p>...Después del script.</p>
+
+</body>
+
+</html>
