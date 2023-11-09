@@ -1,3 +1,5 @@
+// PROGRAMA PARA CALCULAR LOS DÍAS QUE FALTAN PARA TERMINAR EL CURSO DESDE EL 30/10/2023
+
 var hoy = new Date('Oct 30 2023');
 var finalCurso = new Date("06/21/2024");
 
