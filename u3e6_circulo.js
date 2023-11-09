@@ -1,0 +1,12 @@
+radio = prompt("Introduce el valor del radio: ");
+document.write("Valor del radio: " + radio);
+document.write("<br>");
+document.write("Valor del diámetro: " + radio*2);
+document.write("<br>");
+document.write("Valor del perímetro de la circunferencia: " + (2 * Math.PI * radio));
+document.write("<br>");
+document.write("Valor del área del círculo: " + (Math.PI * Math.pow(radio, 2)));
+document.write("<br>");
+document.write("Valor del área de la esfera: " + (4 * Math.PI * Math.pow(radio, 2)));
+document.write("<br>");
+document.write("Valor del volúmen de la esfera: " + (4/3 * Math.PI) * Math.pow(radio, 3));
