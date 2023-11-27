@@ -1,8 +1,12 @@
 function calcularResultado(word){
   let int = parseInt(word);
-  let isNan = isNaN(word);
   let evaluar = eval(word);
-  return evaluar;
+  if(!isNaN(evaluar)){
+    return evaluar;
+  }else{
+    return "Error de expresión";
+  }
+  
 }
 
 console.log(calcularResultado('5 + 3')); // Hauria de mostrar 8

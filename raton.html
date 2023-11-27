@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Posición ratón</title>
+    <style type="text/css">
+      #mousePositions{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:20px;
+        overflow:hidden;
+      }
+    </style>
+    <script type="text/javascript">
+      function position(event){
+        var x = event.clientX;
+        var y = event.clientY;
+        var mousePositions = document.getElementById('mousePositions');
+        mousePositions.innerHTML = 'X coords: '+x+', Y coords: '+y;
+      }
+    </script>
+  </head>
+  <body onmousemove="position(event);" style="height: 1000px;">
+    <div id="mousePositions"></div>
+  </body>
+</html>
