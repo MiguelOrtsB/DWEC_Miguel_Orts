@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Nuevo Número</title>
+    <script type="text/javascript">
+      function nuevoNumero(){
+        // Cogemos el elemento lista del HTML a través de su ID
+        var lista = document.getElementById("lista");
+        // Creamos una variable que almacena la creación de texto y que en su interior tiene numeros aleatorios de 0 a 100
+        var num = document.createTextNode(Math.floor(Math.random()*100));
+        // Almacenamos la creación de un elemento <li>
+        var node = document.createElement('li');
+        // En el elemento node introducimos el elemento hijo, num
+        node.appendChild(num);
+        // Añadimos el elemento hijo node (<li>) a la lista
+        lista.appendChild(node);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="nuevoNumero();" value="Nuevo número">
+    <ul id="lista">
+    </ul>
+  </body>
+</html>
